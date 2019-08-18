@@ -11,7 +11,7 @@ import {TestRepo} from "./test-repo";
 
 export class RestApiService {
 
-  public API = '//localhost:8081';
+  public API = '//54.38.54.196:8081';
   public TESTSUITE_API = this.API + '/test-suite';
   public TESTREPO_API = this.API + '/test-repo';
 
