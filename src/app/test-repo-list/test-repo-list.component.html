@@ -1,0 +1,16 @@
+
+<mat-card>
+  <mat-card-title>Lista testów</mat-card-title>
+  <mat-card-content>
+
+        <mat-list>
+          <mat-list-item *ngFor="let testRepo of testRepos">
+            <p matLine>  {{testRepo.created | date:'medium' }} (<b>{{testRepo.githubLogin}}</b>)</p>
+            <p matLine>   {{testRepo.url}}
+              <a mat-stroked-button color="accent" [routerLink]="['/test-suite-list', testRepo.id]">Show results</a>
+            </p>
+          </mat-list-item>
+        </mat-list>
+  </mat-card-content>
+</mat-card>
+
